@@ -1,0 +1,269 @@
+
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  src: url("./fonts/SFPRODISPLAYBOLD.OTF")
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 200;
+  src: url("./fonts/SFPRODISPLAYREGULAR.OTF")
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  src: url("./fonts/SFPRODISPLAYMEDIUM.OTF")
+}
+
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+*{
+  font-family: "SF Pro Display";
+}
+
+section.hero {
+  height: 57vh;
+  max-height: 100%;
+  max-width: 89rem;
+  display: flex;
+  gap: 5rem;
+  min-width: 56rem;
+  width: 100%;
+  padding: 4rem 3vw 0 3vw;
+  flex-direction: column;
+}
+
+input.select-input {
+  border: 0;
+  background: #fff;
+  width: 12rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1rem;
+}
+input.select-input {
+  font-weight: 200;
+}
+
+img.line {
+  position: absolute;
+  width: calc(100% + 6vw);
+  max-width: none;
+}
+
+
+
+@keyframes translateAnimation {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.mini-planes {
+  display: flex;
+  flex-direction: row;
+  margin-top: -8px;
+  margin-right: -15rem;
+  animation: translateAnimation 15s linear infinite;
+  justify-content: space-between;
+}
+
+.line-animations {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0;
+  max-width: 100%;
+}
+
+.search{
+  cursor: pointer;
+}
+
+.flights-container {
+  margin-top: 3rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-section {
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flight span{
+  color: #041541;
+}
+
+span.date-time {
+  font-size: 31px;
+  font-weight: 700;
+  color: #041541;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+span.label-input {
+  color: white;
+  font-weight: 700;
+} 
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.hero-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.choice {
+  padding: 1rem;
+  border-bottom: 1px solid #041541;
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  width: 100%;
+  background: #041541;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.big-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #041541;
+}
+
+.flights-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+}
+
+.flights {
+  max-width: 51rem;
+  width: 100%;
+}
+
+.book-section {
+  display: flex;
+  width: 38%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper {
+  position: fixed;
+  background: #000000c4;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-animated {
+  animation: fadeInOut 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+button.book-bbtn {
+  width: 194px;
+  height: 4rem;
+  border: 0;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  background: #041541;
+  color: white;
+  cursor: pointer;
+}
+
+.flight {
+  height: 14rem;
+  border: 3px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices {
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 5.5rem;
+  z-index: 100000;
+  width: 100%;
+  border: 1px solid;
+  height: 200px;
+  overflow: auto;
+}
+
+img.logo {
+  width: 100px;
+}
+span.text-hero {
+  font-size: 5rem;
+  color: white;
+  line-height: 5rem;
+}
+
+img.plane {
+  width: 154px;
+}
+
+span.thin-text {
+  font-weight: 100;
+}
